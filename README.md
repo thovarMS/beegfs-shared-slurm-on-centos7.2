@@ -1,4 +1,4 @@
-# All in one cluster : set of VM with BeeGFS & SLURM on CentOS 7.2
+# All in one cluster (BeeGFS & SLURM) on CentOS 7.2
 
 Deploys on the same set of VM:
    a BeeGFS cluster with metadata and storage nodes
