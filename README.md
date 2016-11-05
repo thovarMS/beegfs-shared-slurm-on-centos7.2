@@ -1,4 +1,4 @@
-# All in one cluster (BeeGFS & SLURM) on CentOS 7.2
+<b>All in one cluster (BeeGFS & SLURM) on CentOS 7.2</b>
 
 This ARM template is inspired by Christian Smith template:
 
@@ -26,7 +26,7 @@ Deploys on the same set of VM:
 
 5. Click Create.
 
-## Architecture:
+<b>Architecture</b>
 
 The VM called storage0 is the BeeGFS metadata server and the slurm master and also export the following NFS shared storage /share/home & /share/data
 
@@ -39,19 +39,20 @@ About SLURM:
    Each compute node by default has 1 core avalaible for slurm
    
    You should change the slurm.conf file to adapt it to the real number of cpu:
-      NodeName=storage[1-number_of_nodes] Procs=16
+      <code>NodeName=storage[1-number_of_nodes] Procs=16</code>
       
    Then restart the slurm daemon:
-      systemctl restart slurmctld
+      <code>systemctl restart slurmctld</code>
       
    And put the nodes on ine with scontrol:
-      scontrol: update NodeName=storager0 State=RESUME
+      <code>scontrol: update NodeName=storager0 State=RESUME
       scontrol: update NodeName=storager1 State=RESUME
-      scontrol: exit
+      scontrol: exit</code>
 
-   Then control with: sinfo -N -l
+   Then control with: 
+   <code>sinfo -N -l</code>
 
-## Accessing the cluster
+<b>Accessing the cluster</b>
 
 Simply SSH to the master node using the IP address.
 
