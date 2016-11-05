@@ -94,7 +94,7 @@
     },
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('networkSettings').virtualNetworkName)]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('networkSettings').subnet.dse.name)]",
-    "templateBaseUrl": "https://raw.githubusercontent.com/smith1511/hpc/master/beegfs-shared-on-centos7.2/",
+    "templateBaseUrl": "https://raw.githubusercontent.com/thovarMS/beegfs-shared-slurm-on-centos7.2/master/",
     "installationCLI": "[concat('bash azuredeploy.sh ', parameters('metadataNodeCount'), ' ', variables('storageVMName'), ' ', parameters('storageNodeCount'), ' ', variables('templateBaseUrl'))]"
   },
   "resources": [
