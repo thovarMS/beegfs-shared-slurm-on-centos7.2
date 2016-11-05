@@ -28,26 +28,31 @@ Deploys on the same set of VM:
 
 ## Architecture:
 
-storage0 : is the BeeGFS metadata server and the slurm master
-storage[1-n] : are BeeGFS storage server + slurm compute nodes
+The VM called storage0:
+     is the BeeGFS metadata server and the slurm master
+     export the following NFS shared storage /share/home & /share/data
 
-storage0 export the following NFS shared storage:
-   /share/home & /share/data
+The VMs called storage[1-n]:
+     are BeeGFS storage server + slurm compute nodes
 
 The BeeGFS storage is mounted on /share/scratch on every nodes
 
 About SLURM:
-   each compute node by default has 1 core avalaible for slurm
-   your should change the slurm.conf file to adapt it to the real number of cpu:
+
+   Each compute node by default has 1 core avalaible for slurm
+   
+   You should change the slurm.conf file to adapt it to the real number of cpu:
       NodeName=storage[1-number_of_nodes] Procs=16
-   the restart the slurm daemon:
+      
+   Then restart the slurm daemon:
       systemctl restart slurmctld
-   and put the nodes on ine with scontrol:
+      
+   And put the nodes on ine with scontrol:
       scontrol: update NodeName=storager0 State=RESUME
       scontrol: update NodeName=storager1 State=RESUME
       scontrol: exit
-   Then control with: sinfo -N -l
 
+   Then control with: sinfo -N -l
 
 ## Accessing the cluster
 
