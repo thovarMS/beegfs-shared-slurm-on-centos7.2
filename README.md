@@ -28,12 +28,9 @@ Deploys on the same set of VM:
 
 ## Architecture:
 
-The VM called storage0:
-     is the BeeGFS metadata server and the slurm master
-     export the following NFS shared storage /share/home & /share/data
+The VM called storage0 is the BeeGFS metadata server and the slurm master and also export the following NFS shared storage /share/home & /share/data
 
-The VMs called storage[1-n]:
-     are BeeGFS storage server + slurm compute nodes
+The VMs called storage[1-n] are BeeGFS storage server + slurm compute nodes
 
 The BeeGFS storage is mounted on /share/scratch on every nodes
 
