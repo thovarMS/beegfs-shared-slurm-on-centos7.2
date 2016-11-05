@@ -1,3 +1,5 @@
+<img alt="Work In Progress" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
+
 This ARM template is inspired by Christian Smith template:
 
    BeeGFS tempate: https://github.com/smith1511/hpc/tree/master/beegfs-shared-on-centos7.2  
@@ -10,8 +12,6 @@ This ARM template is inspired by Christian Smith template:
 Deploys on the same set of VM:
    BeeGFS cluster with metadata and storage nodes 
    Slurm as Job Scheduler
-
-<img alt="Deploy to Azure" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FthovarMS%2Fbeegfs-shared-slurm-on-centos7.2%2Fmaster%2Fazuredeploy.json" target="_blank">
    <img alt="Deploy to Azure" src="http://azuredeploy.net/deploybutton.png"/>
