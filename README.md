@@ -1,6 +1,8 @@
-# BeeGFS + SLURM on CentOS 7.2 ARM Template with Metadata service on Storage nodes
+# All in one cluster : BeeGFS + SLURM on CentOS 7.2 ARM Template with Metadata service on Storage nodes
 
-Deploys a BeeGFS cluster with metadata and storage nodes and install Slurm
+Deploys on the same set of VM:
+   a BeeGFS cluster with metadata and storage nodes
+   Slurm as Job Scheduler
 
 <img alt="Deploy to Azure" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
 
