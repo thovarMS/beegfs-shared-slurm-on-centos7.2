@@ -31,7 +31,7 @@
     },
     "storageNodeSize": {
       "type": "string",
-      "defaultValue": "Standard_A4",
+      "defaultValue": "Standard_DS4_v2",
       "metadata": {
         "description": "Size of the storage nodes."
       }
