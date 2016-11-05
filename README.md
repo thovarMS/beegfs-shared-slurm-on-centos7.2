@@ -2,8 +2,8 @@
 
 This ARM template is inspired by Christian Smith template:
 
-    BeeGFS tempate: https://github.com/smith1511/hpc/tree/master/beegfs-shared-on-centos7.2 
-    Slurm template: https://github.com/smith1511/hpc/tree/master/slurm-on-centos7.1-hpc  
+    BeeGFS tempate: https://github.com/smith1511/hpc/tree/master/beegfs-shared-on-centos7.2  
+    Slurm template: https://github.com/smith1511/hpc/tree/master/slurm-on-centos7.1-hpc   
     I do merge the both template.
 
 Deploys on the same set of VM:
