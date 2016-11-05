@@ -1,10 +1,11 @@
-<b>All in one cluster (BeeGFS & SLURM) on CentOS 7.2</b>
-
 This ARM template is inspired by Christian Smith template:
 
    BeeGFS tempate: https://github.com/smith1511/hpc/tree/master/beegfs-shared-on-centos7.2  
    Slurm template: https://github.com/smith1511/hpc/tree/master/slurm-on-centos7.1-hpc   
     <i>I do merge the both template.</i>
+
+<b>All in one cluster (BeeGFS & SLURM) on CentOS 7.2</b>
+
 
 Deploys on the same set of VM:
    BeeGFS cluster with metadata and storage nodes 
