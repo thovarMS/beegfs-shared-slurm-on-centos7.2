@@ -46,18 +46,18 @@ The BeeGFS storage is mounted on /share/scratch on every nodes
 
    Each compute node by default has 1 core avalaible for slurm
    
-   You should change the slurm.conf file to adapt it to the real number of cpu:
+   You should change the slurm.conf file to adapt it to the real number of cpu:<br></br>
       <code>NodeName=storage[1-number_of_nodes] Procs=16</code>
       
-   Then restart the slurm daemon:
+   Then restart the slurm daemon:<br></br>
       <code>systemctl restart slurmctld</code>
       
-   And put the nodes on ine with scontrol:
-      <code>scontrol: update NodeName=storager0 State=RESUME
-      scontrol: update NodeName=storager1 State=RESUME
-      scontrol: exit</code>
+   And put the nodes on ine with scontrol:<br></br>
+      <code>scontrol: update NodeName=storager0 State=RESUME</code>
+      <code>scontrol: update NodeName=storager1 State=RESUME</code>
+      <code>scontrol: exit</code>
 
-   Then control with: 
+   Then control with: <br></br>
    <code>sinfo -N -l</code>
 
 <b>Accessing the cluster</b>
