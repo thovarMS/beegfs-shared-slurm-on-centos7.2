@@ -5,7 +5,7 @@ This ARM template is inspired by Christian Smith template:
     <i>I do merge the both template.</i>
 
 <b>All in one cluster (BeeGFS & SLURM) on CentOS 7.2</b>
-
+=======================================================
 
 Deploys on the same set of VM:
    BeeGFS cluster with metadata and storage nodes 
@@ -26,23 +26,28 @@ Deploys on the same set of VM:
 5. Click Create.
 
 <b>Architecture</b>
+-----------------
 
 The VM called storage0 is the BeeGFS metadata server and the slurm master and also export the following NFS shared storage /share/home & /share/data
 
 The VMs called storage[1-n] are BeeGFS storage server + slurm compute nodes
 
+<b>Logical Architecture</b> 
+
 <img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Archi.PNG"  align="middle" width="395" height="274"  alt="architecture" border="1"/> <br></br>
 
-Delpoyed in Azure: 
+<b>Delpoyed in Azure:</b> 
 
 <img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Azure%20Archi.PNG"  align="middle" width="395" height="274"  alt="azure_architecture" border="1"/> <br></br>
 
 
 <b>BeeGFS</b>
+-----------------
 
 The BeeGFS storage is mounted on /share/scratch on every nodes
 
 <b>SLURM</b>
+-----------------
 
    Each compute node by default has 1 core avalaible for slurm
    
@@ -61,6 +66,7 @@ The BeeGFS storage is mounted on /share/scratch on every nodes
    <code>sinfo -N -l</code>
 
 <b>Accessing the cluster</b>
+-----------------
 
 Simply SSH to the master node using the IP address.
 
@@ -71,6 +77,7 @@ Simply SSH to the master node using the IP address.
 You can log into the first metadata node using the admin user and password specified.
 
 <b>Still to do</b>
+-----------------
 
 <img alt="Work In Progress" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
 
