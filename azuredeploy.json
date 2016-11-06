@@ -33,14 +33,14 @@
       "type": "string",
       "defaultValue": "Standard_DS4_v2",
       "metadata": {
-        "description": "Size of the storage nodes."
+        "description": "Size of the storage nodes. The instance must allow at least 16 data disks"
       }
     },
     "storageNodeCount": {
       "type": "int",
       "defaultValue": 6,
       "metadata": {
-        "description": "This template creates N storage nodes. Use storageNodeCount to specify that N."
+        "description": "Number of BeeGFS storage nodes."
       }
     },
     "storageDataDiskSize": {
