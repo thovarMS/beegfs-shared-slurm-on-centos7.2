@@ -33,6 +33,13 @@ The VM called storage0 is the BeeGFS metadata server and the slurm master and al
 
 The VMs called storage[1-n] are BeeGFS storage server + slurm compute nodes
 
+<img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Archi.PNG"  align="middle" width="395" height="274"  alt="architecture" border="1"/> <br></br>
+
+Delpoyed in Azure: 
+
+<img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Azure%20Archi.PNG"  align="middle" width="395" height="274"  alt="azure_architecture" border="1"/> <br></br>
+
+
 <b>BeeGFS</b>
 
 The BeeGFS storage is mounted on /share/scratch on every nodes
