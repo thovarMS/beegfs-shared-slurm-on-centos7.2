@@ -335,7 +335,7 @@ install_munge()
 
     if is_master; then
         dd if=/dev/urandom bs=1 count=1024 > /etc/munge/munge.key
-    mkdir -p $SLURM_CONF_DIR
+        mkdir -p $SLURM_CONF_DIR
         cp /etc/munge/munge.key $SLURM_CONF_DIR
     else
         while [ ! -f $SLURM_CONF_DIR/munge.key ] ;
