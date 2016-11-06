@@ -338,6 +338,10 @@ install_munge()
     mkdir -p $SLURM_CONF_DIR
         cp /etc/munge/munge.key $SLURM_CONF_DIR
     else
+        while [ ! -f $SLURM_CONF_DIR/munge.key ] ;
+	do
+	       sleep 2
+	done
         cp $SLURM_CONF_DIR/munge.key /etc/munge/munge.key
     fi
 
