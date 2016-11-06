@@ -33,9 +33,11 @@ The VM called storage0 is the BeeGFS metadata server and the slurm master and al
 
 The VMs called storage[1-n] are BeeGFS storage server + slurm compute nodes
 
+<b>BeeGFS</b>
+
 The BeeGFS storage is mounted on /share/scratch on every nodes
 
-About SLURM:
+<b>SLURM</b>
 
    Each compute node by default has 1 core avalaible for slurm
    
