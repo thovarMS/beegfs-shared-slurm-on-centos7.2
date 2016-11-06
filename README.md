@@ -1,5 +1,3 @@
-<img alt="Work In Progress" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
-
 This ARM template is inspired by Christian Smith template:
 
    BeeGFS tempate: https://github.com/smith1511/hpc/tree/master/beegfs-shared-on-centos7.2  
@@ -71,3 +69,12 @@ Simply SSH to the master node using the IP address.
 ```
 
 You can log into the first metadata node using the admin user and password specified.
+
+<b>Still to do</b>
+
+<img alt="Work In Progress" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
+
+- check that all package intalled during install_pkgs_slurm fonction in deployazure.sh are mandatory
+- let the user chose how many data disk per VM
+- use VMSS instead of VM
+
