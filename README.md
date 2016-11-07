@@ -5,16 +5,17 @@ This ARM template is inspired by Christian Smith template:
  *I have merged the both template.*
 
 # All in one cluster (BeeGFS & SLURM) on CentOS 7.2
-=======================================================
 
 Deploys on the same set of VM:
    - BeeGFS cluster with metadata and storage nodes 
    - Slurm as Job Scheduler
 
+## Click here to deploy:
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FthovarMS%2Fbeegfs-shared-slurm-on-centos7.2%2Fmaster%2Fazuredeploy.json" target="_blank">
    <img alt="Deploy to Azure" src="http://azuredeploy.net/deploybutton.png"/>
 </a>
 
+## Questions for deployement:
 1. Fill in the mandatory parameters.
 
 2. Select an existing resource group or enter the name of a new resource group to create.
