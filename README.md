@@ -28,21 +28,25 @@ Deploys on the same set of VM:
 
 ## Architecture
 
-The VM called storage0 is the BeeGFS metadata server and the slurm master and also export the following NFS shared storage /share/home & /share/data
-
-The VMs called storage[1-n] are BeeGFS storage server + slurm compute nodes
-
 ### Logical Architecture
 
-<img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Archi.PNG"  align="middle" width="395" height="274"  alt="architecture" border="1"/> <br></br>
+![Alt text](https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Archi.PNG "architecture")
+
+The VM called storage0 is :
+- the BeeGFS metadata server + management host
+- the slurm master
+- NFS server: export the following shared storage /share/home & /share/data
+
+The VMs called storage[1-n] are:
+- BeeGFS storage server
+- [Optinnal] some of them may also be BeeGFS metadata server (based on the template parameters)
+- Slurm compute nodes
 
 ### Delpoyed in Azure
 
-<img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Azure%20Archi.PNG"  align="middle" width="395" height="274"  alt="azure_architecture" border="1"/> <br></br>
-
+![Alt text](https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Azure%20Archi.PNG "azure_architecture")
 
 ## BeeGFS
-
 
 The BeeGFS storage is mounted on /share/scratch on every nodes
 
@@ -75,7 +79,8 @@ Simply SSH to the master node using the IP address.
 You can log into the first metadata node using the admin user and password specified.
 
 ## Still to do
-<img alt="Work In Progress" src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png"/>
+
+<img src="https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/workInProgress.png" align="middle" />
 
 - check that all package intalled during install_pkgs_slurm fonction in deployazure.sh are mandatory
 - let the user chose how many data disk per VM
