@@ -39,7 +39,7 @@ The VM called storage0 is :
 
 The VMs called storage[1-n] are:
 - BeeGFS storage server
-- [Optinnal] some of them may also be BeeGFS metadata server (based on the template parameters)
+- [Optionnal] some of them may also be BeeGFS metadata server (based on the template parameters)
 - Slurm compute nodes
 
 ### Deployed in Azure
