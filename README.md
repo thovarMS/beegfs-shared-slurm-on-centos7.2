@@ -42,7 +42,7 @@ The VMs called storage[1-n] are:
 - [Optinnal] some of them may also be BeeGFS metadata server (based on the template parameters)
 - Slurm compute nodes
 
-### Delpoyed in Azure
+### Deployed in Azure
 
 ![Alt text](https://github.com/thovarMS/beegfs-shared-slurm-on-centos7.2/blob/master/Azure%20Archi.PNG "azure_architecture")
 
