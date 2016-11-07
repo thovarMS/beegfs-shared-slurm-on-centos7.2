@@ -199,6 +199,9 @@ setup_disks()
     mkdir -p $SHARE_DATA
     mkdir -p $SHARE_SCRATCH
     
+    chmod 777 $SHARE_HOME
+    chmod 777 $SHARE_DATA
+    
     if is_mgmtnode; then
         echo "$SHARE_HOME    *(rw,async)" >> /etc/exports
         echo "$SHARE_DATA    *(rw,async)" >> /etc/exports
