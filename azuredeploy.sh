@@ -341,7 +341,8 @@ install_munge()
         mkdir -p $SLURM_CONF_DIR
         cp /etc/munge/munge.key $SLURM_CONF_DIR
     else
-        while [ ! -f $SLURM_CONF_DIR/munge.key ] ;
+        # WARNING: potential infinite loop
+	while [ ! -f $SLURM_CONF_DIR/munge.key ] ;
 	do
 	       sleep 2
 	done
