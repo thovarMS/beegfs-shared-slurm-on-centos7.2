@@ -86,5 +86,6 @@ You can log into the first metadata node using the admin user and password speci
 - let the user chose how many data disk per VM
 - use VMSS instead of VM
 - use Ganglia for monitoring
+- enble MPI if RDMA instance are used + uses HPC images of CentOS
 
 
