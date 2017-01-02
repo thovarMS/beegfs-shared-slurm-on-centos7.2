@@ -342,9 +342,10 @@ install_munge()
         cp /etc/munge/munge.key $SLURM_CONF_DIR
 	touch $SLURM_CONF_DIR/mungeok.txt
     else
-        # WARNING: potential infinite loop
 	while [ ! -f $SLURM_CONF_DIR/mungeok.txt ] ;
 	do
+	       # TO AVOID a potential infinite loop
+	       mount -a
 	       sleep 2
 	done
         cp $SLURM_CONF_DIR/munge.key /etc/munge/munge.key
